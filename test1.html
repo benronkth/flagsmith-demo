@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <title>Flagsmith 1st test</title>
+ </head>
+
+ <body>
+  <h1 id="title">This title appears if the flag "display_title" is on</h1>
+  <h4 id="subtitle">This subtitle is always here, independently of the value of the flag</h4>
+ </body>
+</html>
+
+<style>
+#title {
+  display: none;
+}
+</style>
+
+<!-- Import the SDK -->
+<script src="https://cdn.jsdelivr.net/npm/flagsmith/index.js"></script>
+<script>
+ flagsmith.init({
+  environmentID: 'ExdQSzC8hksUtUQZaidDKZ',
+  onChange: (oldFlags, params) => {
+    if (flagsmith.hasFeature('display_title')) {
+     var title = document.getElementById('title');
+     title.style.display = 'block';
+    }
+    if (flagsmith.hasFeature('subtitle_color')) {
+     var subtitle = document.getElementById('subtitle');
+     const text_color = flagsmith.getValue('subtitle_color')
+     subtitle.style.color = text_color;
+    }
+  },
+ });
+</script>
