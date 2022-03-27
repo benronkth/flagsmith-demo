@@ -27,3 +27,9 @@ tASKS:
 - [ ] a summary
 
 
+What we need:
+- [ ] 2 users to do AB testing
+- [ ] dark mode or design change for a specific segment
+- [ ] different color and position change of an elements, like or buy button to see how many people react to it (AB testing)
+- [ ] alpha beta users and environment
+
