@@ -1,0 +1,72 @@
+<!-- Script inspired from the CodePen at:
+ https://codepen.io/wvgvwgv/pen/xxOEdqO?editors=1100 -->
+
+<script src="https://kit.fontawesome.com/9bdba8a8ac.js" crossorigin="anonymous"></script>
+<link rel="icon" type="image/x-icon" href="https://mobirise.com/website-templates/shopping-website-template/assets/images/logo2.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+<link rel="stylesheet" href="./main.css">
+
+<title>Flaggstang</title>
+
+<!-- Start Nav -->
+<div class="nav">
+    <div class="info">
+        <div class="logo">
+            <h2><img src="https://mobirise.com/website-templates/shopping-website-template/assets/images/logo2.png" alt="">Flaggstång</h2>
+        </div>
+        <ul class="links">
+            <li><a href=""></a>More products <i class="fa fa-angle-down"></i></li>
+            <li><a href=""></a>Contact <i class="fa fa-angle-down"></i></li>
+        </ul>
+    </div>
+</div>
+<!-- End Nav -->
+
+<!-- Start Banner -->
+<div id="banner">
+    <div class="info-text">
+        <h1>New arrivals ! <span>Jeans</span></h1>
+        <p>Save over <span>25%</span> on the purchase of jeans from the new collection.</p>
+        <br>
+        <button>Shop Now</button>
+    </div>
+</div>
+<!-- End Banner -->
+
+<!-- Start Popup -->
+<div id="backgroundPopup" style="display: none;">
+    <div id="popup">
+        <div class="info-text">
+            <h1>New arrivals ! <span>Jeans</span></h1>
+            <p>Save over <span>25%</span> on the purchase of jeans from the new collection.</p>
+            <br>
+            <button>Shop Now</button>
+        </div>
+        <button type="button" name="closePopup" onclick="closePopup()" id="closeBtn"><i class="fa fa-close"></i></button>
+    </div>
+</div>
+<!-- End Popup -->
+
+<!-- Start Card -->
+<div id="card">
+  <div class="title">
+      <p>Discover a selection from our new collection </p>
+      <h1>New Arrivals</h1>
+  </div>
+  <div id="itemsContainer">
+      <!-- Filled in with Javascript code -->
+  </div>
+</div>
+
+<script src="./items-list.json"></script>
+<script src="./item-card.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flagsmith/index.js"></script>
+<script src="./main.js"></script>
+<script src="./flags-handling.js"></script>
+<!-- End Card -->
+
+<!-- Start Footer -->
+<div class="footer">
+    <p>Footer often containing: policy, find us, contact, about us</p>
+</div>
+<!-- End Footer -->

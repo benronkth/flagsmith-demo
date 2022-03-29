@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Start Nav */
+.nav {
+    background: #232323;
+    min-height: 77px;
+    padding: 0 3%;
+    overflow: hidden;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.nav .info {
+    display: flex;
+    justify-content: space-between;
+}
+.nav .info .logo h2 {
+    line-height: 77px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 2.1rem;
+}
+.nav .info .logo h2 img{
+    width: 61px;
+    margin-top: 9px;
+    float: left;
+    margin-right: 16px;
+}
+.nav .info .links {line-height: 77px;}
+.nav .info .links li {
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: relative;
+}
+.nav .info .links li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: #fe525b;
+    bottom: 16px;
+    transition: .5s;
+}
+.nav .info .links li:hover::after {
+    width: 100%;
+    left: 0;
+}
+/* End Nav */
+
+/* Start Banner */
+#banner {
+    background: url(https://mobirise.com/website-templates/shopping-website-template/assets/images/background10.jpg);
+    background-size: cover;
+    background-position: -1px -164px
+}
+#banner .info-text h1 {
+    font-size: 50px;
+    margin-top: 100px;
+}
+#banner .info-text button {
+    border: none;
+}
+#banner .info-text {
+    text-align: center;
+    padding: 2rem;
+}
+#banner .info-text p {
+    font-size: 29px;
+    color: #1b1919;
+    text-shadow: 2px 2px 5px white;
+}
+/* End Banner */
+
+/* Start Popup */
+#backgroundPopup {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000a;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+#popup {
+    position: relative;
+    background-color: #232323;
+    width: 80%;
+    color: #cacaca;
+    border-radius: 20px;
+    padding: 20px;
+}
+#popup #closeBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+    background-color: #fe525b;
+    height: 30px;
+    width: 30px;
+}
+#popup #closeBtn i {
+    font-size: 20px;
+}
+#popup .info-text h1 {
+    font-size: 50px;
+}
+#popup .info-text p {
+    font-size: 29px;
+    color: #cacaca;
+}
+#popup .info-text {
+    text-align: center;
+    padding: 2rem;
+}
+/* End Popup */
+
+/* Start Banner/Popup */
+.info-text h1 span {
+    color: #fe525b;
+    font-weight: bold;
+}
+.info-text p span {
+  color: #fe525b;
+  font-weight: bold;
+}
+.info-text button {
+    background: #fe525b;
+    padding: 15px 20px;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 20px;
+    transition: .4s;
+}
+.info-text button:hover {
+    background: #e91822;
+}
+/* End Banner/Popup */
+
+/* Start Card */
+#card {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 0 3%;
+}
+#card .title {
+    text-align: center;
+}
+#card .title p {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#card .title h1 {
+    font-size: 40px;
+    color: #242424;
+}
+#card #itemsContainer {
+    margin-top: 2rem;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+#card #itemsContainer .col-item {
+    position: relative;
+    cursor: pointer;
+}
+#card #itemsContainer .col-item:hover img {
+    filter: none;
+}
+#card #itemsContainer .col-item div img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+#card #itemsContainer .col-item div .info-text {
+    position: absolute;
+    bottom: 9px;
+    z-index: 2;
+    right: 16px;
+    direction: rtl;
+}
+#card #itemsContainer .col-item div .info-text h2 {
+    color: #1fcec6;
+    font-weight: normal;
+    font-size: 29px;
+}
+#card #itemsContainer .col-item div .info-text h3 {
+    font-size: 22px;
+    color: #fff;
+}
+/* End Card */
+
+/* Starrt footer */
+.footer {
+    padding: 0 5%;
+    background: url(https://mobirise.com/website-templates/shopping-website-template/assets/images/background10.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+.footer p {
+  margin: 40px;
+  text-shadow: 2px 2px 5px black;
+}
+/* End footer */

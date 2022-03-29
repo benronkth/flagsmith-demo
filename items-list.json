@@ -1,0 +1,36 @@
+items_list = {
+  "items": [
+   {"name": "Red Snapback",
+    "price": "$29",
+    "pictureURL": "https://mobirise.com/website-templates/shopping-website-template/assets/images/shop3.jpg"
+   },
+   {"name": "Blue Backpack",
+    "price": "$75",
+    "pictureURL": "https://mobirise.com/website-templates/shopping-website-template/assets/images/shop2.jpg"
+   },
+   {"name": "Red Cap",
+    "price": "$46",
+    "pictureURL": "https://mobirise.com/website-templates/shopping-website-template/assets/images/shop7.jpg"
+   },
+   {"name": "Pink Backpack",
+    "price": "$63",
+    "pictureURL": "https://mobirise.com/website-templates/shopping-website-template/assets/images/shop6.jpg"
+   },
+   {"name": "Mens Shoes",
+    "price": "$93",
+    "pictureURL": "https://mobirise.com/website-templates/shopping-website-template/assets/images/shop1.jpg"
+   },
+   {"name": "Brown Glasses",
+    "price": "$80",
+    "pictureURL": "https://mobirise.com/website-templates/shopping-website-template/assets/images/shop0.jpg"
+   },
+   {"name": "Womens Shoes",
+    "price": "$43",
+    "pictureURL": "https://mobirise.com/website-templates/shopping-website-template/assets/images/shop5.jpg"
+   },
+   {"name": "Black Glasses",
+    "price": "$64",
+    "pictureURL": "https://mobirise.com/website-templates/shopping-website-template/assets/images/shop4.jpg"
+   }
+  ]
+}
