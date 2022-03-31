@@ -2,7 +2,19 @@
 const items = items_list["items"];
 itemsContainer = document.getElementById("itemsContainer");
 content = "";
-for (var i of items) {
+
+var urlAsArray = window.location.href.split("/");
+var page = urlAsArray[urlAsArray.length - 1];
+// Main page
+var itemsToDisplay = (page == "main.html")
+  ? items.slice(0, 4)
+  : items;
+// Products page
+var itemsToDisplay = (page == "products.html?discount")
+  ? items.filter( item  => item.discount === true)
+  : itemsToDisplay;
+
+for (var i of itemsToDisplay) {
   content += create_HTML_item(i.name, i.price, i.pictureURL);
 }
 itemsContainer.innerHTML = content;
@@ -30,11 +42,13 @@ uuid = createUUID();
 /* Closing the popup */
 function closePopup () {
   document.getElementById("backgroundPopup").style.display = "none";
-  document.body.style.overflow = "scroll";
+  document.body.style.overflow = "auto";
 }
 
-document.getElementById("backgroundPopup").addEventListener("click", (event) => {
-  if (event.target == document.getElementById("backgroundPopup")) {
-    closePopup();
-  }
-})
+if (page == "main.html") {
+  document.getElementById("backgroundPopup").addEventListener("click", (event) => {
+    if (event.target == document.getElementById("backgroundPopup")) {
+      closePopup();
+    }
+  })
+}
