@@ -39,6 +39,45 @@ function createUUID() {
 uuid = createUUID();
 
 ////////////////////////////////////////////////////////////////////////////////
+/* Handling dark mode */
+document.getElementById("blackModeCheckbox").addEventListener('change', (event) => {
+  dark_mode = document.getElementById("blackModeCheckbox").checked;
+  if (dark_mode) {
+    apply_dark_mode();
+  } else {
+    apply_light_mode();
+  }
+})
+
+function apply_dark_mode () {
+  document.body.style.backgroundColor = "#232323ee";
+  document.querySelector("#card .title h1").style.color = "#000";
+  for (var i of document.querySelectorAll("#card .title")) {
+    i.style.textShadow = "1px 1px 10px #888";
+  }
+  document.querySelector("#banner").style.filter = "brightness(80%)";
+  document.querySelector(".footer").style.filter = "brightness(80%)";
+  for (var i of document.querySelectorAll(".item")) {
+    i.style.filter = "brightness(80%)";
+  }
+}
+
+function apply_light_mode () {
+  document.body.style.backgroundColor = "#fff";
+  document.querySelector("#card .title h1").style.color = "#242424";
+  for (var i of document.querySelectorAll("#card .title")) {
+    i.style.textShadow = "none";
+  }
+  document.querySelector("#banner").style.filter = "brightness(100%)";
+  document.querySelector(".footer").style.filter = "brightness(100%)";
+  for (var i of document.querySelectorAll(".item")) {
+    i.style.filter = "brightness(100%)";
+  }
+}
+
+// save as a trait if the user prefer the dark mode or light mode
+
+////////////////////////////////////////////////////////////////////////////////
 /* Closing the popup */
 function closePopup () {
   document.getElementById("backgroundPopup").style.display = "none";

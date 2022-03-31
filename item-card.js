@@ -1,5 +1,5 @@
 function create_HTML_item (name, price, pictureURL) {
-  var card = `<div class="col-item">
+  var card = `<div class="item">
     <div>
       <img src='${pictureURL}' alt=''>
       <div class='info-text'>
