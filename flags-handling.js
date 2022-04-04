@@ -1,7 +1,7 @@
 firstSetUp = true;
 // Connection to the Flagsmith environment
 flagsmith.init({
-  environmentID: '<Your environment ID here>',
+  environmentID: '0000',
   onChange: (oldFlags, params) => {
     if (flagsmith.hasFeature('sales_banner_position', uuid)) {
       discountPosition = flagsmith.getValue('sales_banner_position');
